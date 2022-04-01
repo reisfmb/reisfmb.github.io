@@ -1,0 +1,24 @@
+:root {
+    --linkcolor: #fc6400;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --linkcolor: #5bf;
+    }
+}
+
+article p {
+    margin: 35px 0px;
+}
+
+#terms .term {
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+.katex-display {
+    background-color: #fc640012;
+    padding: 20px;
+    margin: 0px;
+}
