@@ -2,14 +2,14 @@
     --linkcolor: #fc6400;
 }
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --linkcolor: #5bf;
-    }
-}
-
 article p {
     margin: 35px 0px;
+}
+
+hr {
+    border: 0;
+    background: #fc640012;
+    height: 1px;
 }
 
 #terms .term {
