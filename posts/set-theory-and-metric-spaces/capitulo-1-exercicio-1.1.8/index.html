@@ -1,0 +1,45 @@
+<!doctype html><html lang=pt-br><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content><title>(Irving Kaplansky - Set Theory And Metric Spaces) Capítulo 1, exercício 1.1.8 | Reisfmb blog</title><link rel=stylesheet href=/css/reset.css><link rel=stylesheet href=/css/font.css><link rel=stylesheet href=/css/smigle.css><link rel=stylesheet href=/css/custom.css><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon.ico><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><meta name=msapplication-TileColor content="#da532c"><meta name=theme-color content="#ffffff"><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css integrity=sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js integrity=sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}]})})</script></head><body><header><div id=brand><a class=icon-link href=https://reisfmb.github.io/><img class=icon src=/images/mendelbrot.svg></a><div class=text><a href=https://reisfmb.github.io/><h1>Reisfmb blog</h1></a><h3>Bruno Reis Ferreira Maia</h3></div></div><nav><a href=/><b>Home</b></a>
+|
+<a href=/about/><b>Sobre</b></a>
+|
+<a href=/posts/><b>Posts</b></a>
+|
+<a href=/categories/><b>Categorias</b></a>
+|
+<a href=/tags/><b>Tags</b></a></nav><hr></header><div id=content><main><article><h1>(Irving Kaplansky - Set Theory And Metric Spaces) Capítulo 1, exercício 1.1.8</h1><div class=post-meta><strong><span>Posted on</span>
+<time>02/04/2022</time>
+<span>in</span>
+<a href=/categories/irving-kaplansky-set-theory-and-metric-spaces>Irving Kaplansky - Set Theory And Metric Spaces</a></strong>
+<span>• 293 words</span>
+<span>• 2 minute read</span><div><span>Tags:</span>
+<a href=/tags/teoria-dos-conjuntos>Teoria dos conjuntos</a>,
+<a href=/tags/combinat%C3%B3ria>Combinatória</a></div></div><div><h3 id=pergunta>Pergunta</h3><p>Let A be a finite set. Prove that
+$\bigg| \lbrace x \mid x \subset A \rbrace \bigg| = 2^{|A|}$.</p><h3 id=solução>Solução</h3><p>Queremos provar que o conjunto dos conjuntos potência de $A$ tem cardinalidade igual a $2^{|A|}$.</p><p>Uma maneira bem interessante de se pensar nesse problema é perceber que para cada conjunto potência de $A$ existe uma sequência binária que o identifica. Vamos em busca de encontrar tais sequências.</p><p>Considere o caso $A=\lbrace a,b,c \rbrace$. Sabemos que devemos ter $2^{|A|} = 2^3 = 8$ conjuntos potência. Vamos identificá-los:</p><p>$$
+\emptyset, \lbrace a \rbrace, \lbrace b \rbrace, \lbrace c \rbrace, \lbrace a,b \rbrace, \lbrace a,c \rbrace, \lbrace b,c \rbrace, \lbrace a,b,c \rbrace
+$$</p><p>Podemos então fazer a seguinte correspondência um a um:
+$$
+\begin{align*}
+\emptyset &\longleftrightarrow (0,0,0) \newline
+\lbrace a \rbrace &\longleftrightarrow (1,0,0) \newline
+\lbrace b \rbrace &\longleftrightarrow (0,1,0) \newline
+\lbrace c \rbrace &\longleftrightarrow (0,0,1) \newline
+\lbrace a,b \rbrace &\longleftrightarrow (1,1,0) \newline
+\lbrace a,c \rbrace &\longleftrightarrow (1,0,1) \newline
+\lbrace b,c \rbrace &\longleftrightarrow (0,1,1) \newline
+\lbrace a,b,c \rbrace &\longleftrightarrow (1,1,1) \newline
+\end{align*}
+$$</p><p>A construção de tal correspondência fica evidente pelo exemplo acima, e pode ser feita para qualquer conjunto finito desde que se mantenha uma ordem inicial dos elementos, o que sempre pode ser feito através de uma bijeção ordenadora dado que os conjuntos são finitos.</p><p>Além disso, o exemplo acima também deixa claro a seguinte igualdade combinatória:</p><p>$$
+\sum_{k=0}^n {n \choose k} = 2^n
+$$</p><p>Dado que:</p><ul><li>${n \choose 0}$ contabiliza o subconjunto $\emptyset$ ou a sequência $(0,0,0)$</li><li>${n \choose 1}$ contabiliza os subconjuntos de cardinalidade $1$ ou as sequências que contém somente um $1$</li><li>${n \choose 2}$ contabiliza os subconjuntos de cardinalidade $2$ ou as sequências que contém somente dois $1$</li><li> $\vdots$</li><li>${n \choose n}$ contabiliza o subconjunto $A$ ou a sequência $(1,1,1)$</li></ul></div></article></main></div><footer><hr><p id=social>Find me around the web:<br><a href=https://github.com/reisfmb>GitHub</a>
+|
+<a href=mailto:breisfm@gmail.com>breisfm@gmail.com</a></p><p class=copyright>Copyright © 2022
+<a href=https://reisfmb.github.io/><strong>Bruno Reis</strong></a>.
+This work is licensed under the
+<a href=http://creativecommons.org/licenses/by-sa/4.0/>CC BY-SA 4.0</a> license.</p><p class=builtWith>Built with
+<a href=http://www.gohugo.io/>Hugo</a>,
+using the theme
+<a href=https://gitlab.com/ian-s-mcb/smigle-hugo-theme>smigle</a>,
+which was influenced by the theme
+<a href=https://github.com/sumnerevans/smol>smol</a>.</p></footer></body></html>
