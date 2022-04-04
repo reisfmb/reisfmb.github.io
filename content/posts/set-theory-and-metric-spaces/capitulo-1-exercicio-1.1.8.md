@@ -7,8 +7,8 @@ date: 2022-04-02
 categories:
   - Irving Kaplansky - Set Theory And Metric Spaces
 tags:
-  - Teoria dos conjuntos
-  - Combinatória
+  - Set Theory
+  - Combinatorics
 ---
 ### Pergunta
 Let A be a finite set. Prove that 

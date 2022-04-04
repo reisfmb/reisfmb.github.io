@@ -8,7 +8,7 @@ date: 2022-04-02
 categories:
   - Irving Kaplansky - Set Theory And Metric Spaces
 tags:
-  - Teoria dos conjuntos
+  - Set Theory
 ---
 ### Pergunta
 With an arbitrary (possibly infinite) index set $I$, prove:

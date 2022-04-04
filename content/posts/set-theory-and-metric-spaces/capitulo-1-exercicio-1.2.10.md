@@ -7,7 +7,7 @@ date: 2022-04-02
 categories:
   - Irving Kaplansky - Set Theory And Metric Spaces
 tags:
-  - Teoria dos conjuntos
+  - Set Theory
 ---
 ### Pergunta
 Call a subset $B$ of $A$ cofinite if the complement of $B$ in $A$ is finite. If $B$ and $C$ are cofinite subsets of $A$, prove that $B \cap C$ is cofinite
