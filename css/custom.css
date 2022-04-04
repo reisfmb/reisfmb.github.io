@@ -1,5 +1,13 @@
 :root {
     --linkcolor: #fc6400;
+    --visitedcolor: #fc6400;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --linkcolor: #fc6400;
+        --visitedcolor: #fc6400;
+    }
 }
 
 article p {
