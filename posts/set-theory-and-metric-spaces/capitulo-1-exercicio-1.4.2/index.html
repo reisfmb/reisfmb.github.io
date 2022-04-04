@@ -1,0 +1,34 @@
+<!doctype html><html lang=pt-br><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content><title>(Irving Kaplansky - Set Theory And Metric Spaces) Capítulo 1, exercício 1.4.2 | Reisfmb blog</title><link rel=stylesheet href=/css/reset.css><link rel=stylesheet href=/css/font.css><link rel=stylesheet href=/css/smigle.css><link rel=stylesheet href=/css/custom.css><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon.ico><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><meta name=msapplication-TileColor content="#da532c"><meta name=theme-color content="#ffffff"><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css integrity=sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js integrity=sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}]})})</script></head><body><header><div id=brand><a class=icon-link href=https://reisfmb.github.io/><img class=icon src=/images/mendelbrot.svg></a><div class=text><a href=https://reisfmb.github.io/><h1>Reisfmb blog</h1></a><h3>Bruno Reis Ferreira Maia</h3></div></div><nav><a href=/><b>Home</b></a>
+|
+<a href=/about/><b>Sobre</b></a>
+|
+<a href=/posts/><b>Posts</b></a>
+|
+<a href=/categories/><b>Categorias</b></a>
+|
+<a href=/tags/><b>Tags</b></a></nav><hr></header><div id=content><main><article><h1>(Irving Kaplansky - Set Theory And Metric Spaces) Capítulo 1, exercício 1.4.2</h1><div class=post-meta><strong><span>Posted on</span>
+<time>03/04/2022</time>
+<span>in</span>
+<a href=/categories/irving-kaplansky-set-theory-and-metric-spaces>Irving Kaplansky - Set Theory And Metric Spaces</a></strong>
+<span>• 285 words</span>
+<span>• 2 minute read</span><div><span>Tags:</span>
+<a href=/tags/functions>Functions</a></div></div><div><h3 id=pergunta>Pergunta</h3><p>Let $f: A \rightarrow B$ and $g: B \rightarrow C$ be given functions.</p><p>a) If $f$ and $g$ are onto, prove that $gf$ is onto.</p><p>b) If $gf$ is onto, prove that $g$ is onto.</p><p>c) If $gf$ is onto and $g$ is one-to-one, prove that $f$ is onto.</p><p>d) Give an example where $gf$ is onto, but $f$ is not.</p><h3 id=solução>Solução</h3><h4 id=a>a</h4><p>Seja $c \in C$. Vamos mostrar que existe $a \in A$ tal que $(gf)(a) = c$. Do fato que $g$ é sobrejetora, segue que existe $b \in B$ tal que $c = g(b)$. Do fato que $f$ é sobrejetora, segue que existe $a \in A$ tal que $b = f(a)$. Logo $c = g(b) = g(f(a)) = (gf)(a)$.</p><h4 id=b>b</h4><p>Em busca de contradição, suponha que $g$ não seja sobrejetora, isso é, existe $c \in C$ tal que $\forall b \in B$. Segue que $g(b) \neq c$. Perceba em particular que se, se $b \in f(A)$, $g(b) \neq c$, logo $gf$ não pode ser sobrejetora. Contradição, logo $g$ é sobrejetora.</p><h4 id=c>c</h4><p>Seja $b \in B$. Vamos mostrar que existe $a \in A$ tal que $f(a) = b$. Seja $g(b) = c$. Como $gf$ é sobrejetora, segue que $\exists a \in A$ tal que $(gf)(a) = c$. Perceba então que $(gf)(a) = g(f(a)) = c = g(b)$. Como $g$ é injetora, segue que $f(a) = b$.</p><h4 id=d>d</h4><p>Considere os seguintes conjuntos:</p><p>$$
+A = \lbrace a_1,a_2 \rbrace \newline
+B = \lbrace b_1,b_2,b_3 \rbrace \newline
+C = \lbrace c_1,c_2 \rbrace \newline
+$$</p><p>Defina $f: A \rightarrow B$ e $g: B \rightarrow C$ da seguinte forma:</p><p>$$
+f(a_1) = b_1, f(a_2) = b_2 \newline
+g(b_1) = c_1, g(b_2) = c_2, g(b_3) = c_2 \newline
+$$</p></div></article></main></div><footer><hr><p id=social>Find me around the web:<br><a href=https://github.com/reisfmb>GitHub</a>
+|
+<a href=mailto:breisfm@gmail.com>breisfm@gmail.com</a></p><p class=copyright>Copyright © 2022
+<a href=https://reisfmb.github.io/><strong>Bruno Reis</strong></a>.
+This work is licensed under the
+<a href=http://creativecommons.org/licenses/by-sa/4.0/>CC BY-SA 4.0</a> license.</p><p class=builtWith>Built with
+<a href=http://www.gohugo.io/>Hugo</a>,
+using the theme
+<a href=https://gitlab.com/ian-s-mcb/smigle-hugo-theme>smigle</a>,
+which was influenced by the theme
+<a href=https://github.com/sumnerevans/smol>smol</a>.</p></footer></body></html>
