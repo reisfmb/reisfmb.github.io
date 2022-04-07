@@ -1,0 +1,37 @@
+<!doctype html><html lang=pt-br><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content><title>(Irving Kaplansky - Set Theory And Metric Spaces) Capítulo 1, exercício 1.4.17 | Reisfmb blog</title><link rel=stylesheet href=/css/reset.css><link rel=stylesheet href=/css/font.css><link rel=stylesheet href=/css/smigle.css><link rel=stylesheet href=/css/custom.css><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon.ico><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><meta name=msapplication-TileColor content="#da532c"><meta name=theme-color content="#ffffff"><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css integrity=sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js integrity=sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}]})})</script></head><body><header><div id=brand><a class=icon-link href=https://reisfmb.github.io/><img class=icon src=/images/mendelbrot.svg></a><div class=text><a href=https://reisfmb.github.io/><h1>Reisfmb blog</h1></a><h3>Bruno Reis Ferreira Maia</h3></div></div><nav><a href=/><b>Home</b></a>
+|
+<a href=/about/><b>Sobre</b></a>
+|
+<a href=/posts/><b>Posts</b></a>
+|
+<a href=/categories/><b>Categorias</b></a>
+|
+<a href=/tags/><b>Tags</b></a></nav><hr></header><div id=content><main><article><h1>(Irving Kaplansky - Set Theory And Metric Spaces) Capítulo 1, exercício 1.4.17</h1><div class=post-meta><strong><span>Posted on</span>
+<time>05/04/2022</time>
+<span>in</span>
+<a href=/categories/irving-kaplansky-set-theory-and-metric-spaces>Irving Kaplansky - Set Theory And Metric Spaces</a></strong>
+<span>• 418 words</span>
+<span>• 2 minute read</span><div><span>Tags:</span>
+<a href=/tags/functions>Functions</a></div></div><div><h3 id=pergunta>Pergunta</h3><p>Let $f$ be a map of the set $A$ to itself.</p><p>a) If $B$ and $C$ are subsets with $f(B) = B$ and $f(C) = C$, prove that $f(B \cup C) = B \cup C$.</p><p>b) Extend part a to any number of subsets.</p><p>c) Prove that there is a unique largest subset of $A$ which is carried onto itself by $f$.</p><p>d) If $B$ and $C$ are subsets with $f$ one-to-one on $B$ and $C$, is $f$ necessarily one-to-one on $B \cup C$ ?</p><h3 id=solução>Solução</h3><h4 id=a>a</h4><p>Segue direto do fato demonstrado <a href=/posts/set-theory-and-metric-spaces/capitulo-1-exercicio-1.4.10/>na letra (a)</a> e das premissas $f(B) = B$ e $f(C) = C$.</p><h4 id=b>b</h4><p>Já foi mostrado a validade para o caso de $2$ subconjuntos $B$ e $C$ no item anterior. Tomemos esse como o caso base. Considere então válido para a união de $j \leq n$ subconjuntos de $A$, nomeadamente $S_1, S_2, \cdots, S_n$. Mostraremos ser válido para $\bigcup_{i=1}^{n+1} S_i$.</p><p>$$
+\begin{align*}
+f(S_1 \cup S_2 \cup \cdots \cup S_n \cup S_{n+1})
+&= f(S_1 \cup S_2 \cup \cdots \cup (S_n \cup S_{n+1})) \newline
+&= f(S_1) \cup f(S_2) \cup \cdots \cup f(S_n \cup S_{n+1}) \newline
+&= f(S_1) \cup f(S_2) \cup \cdots \cup f(S_n) \cup f(S_{n+1}) \newline
+&= S_1 \cup S_2 \cup \cdots \cup S_n \cup S_{n+1}
+\end{align*}
+$$</p><h4 id=c>c</h4><p>Queremos mostrar que existe somente um maior subconjunto $S \subset A$ tal que $f(S)$ é sobrejetora.</p><p>Primeiro vamos garantir que tal subconjunto existe.</p><p>Para ver isso, perceba que se $f(a) = a$ para algum $a \in A$ então $\lbrace a \rbrace$ é tal conjunto, uma vez que $\lbrace a \rbrace \subset A$ e $f(\lbrace a \rbrace) = \lbrace a \rbrace$.</p><p>Suponha então que $\forall a \in A$, $f(a) \neq a$.</p><p>$$
+???
+$$</p><p>Agora vamos mostrar a unicidade do maior subconjunto com tal propriedade.</p><p>Suponha que $B,C \subset A$ tais que $B \neq C$, $f(B) = B$ e $f(C) = C$. Segue que $f(B \cup C) = f(B) \cup f(C) = B \cup C$. Mas $B,C \subsetneq B \cup C$. Absurdo dado que assumimos que $B$ e $C$ são os maiores subconjuntos com tal priopriedade.</p><h4 id=d>d</h4><p>Não. Considere que $A = B \cup C$ tais que $B = \lbrace 1,2 \rbrace$ e $C = \lbrace 3,4 \rbrace$. Defina $f: A \rightarrow A$ da seguinte forma:</p><ul><li>$ f(1) = 3 $</li><li>$ f(2) = 4 $</li><li>$ f(3) = 3 $</li><li>$ f(4) = 4 $</li></ul><p>Repare que $f$ restrita à $B$, assim como $f$ restrita à $C$, é injetiva, mas $f$ restrita à $B \cup C$ não.</p></div></article></main></div><footer><hr><p id=social>Find me around the web:<br><a href=https://github.com/reisfmb>GitHub</a>
+|
+<a href=mailto:breisfm@gmail.com>breisfm@gmail.com</a></p><p class=copyright>Copyright © 2022
+<a href=https://reisfmb.github.io/><strong>Bruno Reis</strong></a>.
+This work is licensed under the
+<a href=http://creativecommons.org/licenses/by-sa/4.0/>CC BY-SA 4.0</a> license.</p><p class=builtWith>Built with
+<a href=http://www.gohugo.io/>Hugo</a>,
+using the theme
+<a href=https://gitlab.com/ian-s-mcb/smigle-hugo-theme>smigle</a>,
+which was influenced by the theme
+<a href=https://github.com/sumnerevans/smol>smol</a>.</p></footer></body></html>
