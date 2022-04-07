@@ -8,7 +8,6 @@ categories:
   - Irving Kaplansky - Set Theory And Metric Spaces
 tags:
   - Functions
-  - Periodic function
 ---
 ### Pergunta
 Let $f: A \rightarrow B$ be a given function
@@ -26,7 +25,6 @@ Seja $y \in f(S)$, logo, por definição, $\exists s \in S$ tal que $y = f(s)$. 
 
 #### b
 Seja $x \in f^{-1}(S)$, logo, por definição, $f(x) \in S$. Como $S \subset T$ então $f(x) \in T$ logo $x \in f^{-1}(T)$.
-
 
 #### c
 Queremos mostrar que $ff^{-1}$ é a relação identidade no cartesiano $P(B) \times P(B)$, ou seja, que $f(f^{-1}(S)) = S$ para todo $S \subset B$.
