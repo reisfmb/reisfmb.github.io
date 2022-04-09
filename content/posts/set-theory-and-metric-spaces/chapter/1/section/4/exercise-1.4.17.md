@@ -23,7 +23,7 @@ d) If $B$ and $C$ are subsets with $f$ one-to-one on $B$ and $C$, is $f$ necessa
 ### Solução
 
 #### a
-Segue direto do fato demonstrado [na letra (a)](/posts/set-theory-and-metric-spaces/capitulo-1-exercicio-1.4.10/) e das premissas $f(B) = B$ e $f(C) = C$.
+Segue direto do fato demonstrado [na letra (a)](../exercise-1.4.10) e das premissas $f(B) = B$ e $f(C) = C$.
 
 #### b
 Já foi mostrado a validade para o caso de $2$ subconjuntos $B$ e $C$ no item anterior. Tomemos esse como o caso base. Considere então válido para a união de $j \leq n$ subconjuntos de $A$, nomeadamente $S_1, S_2, \cdots, S_n$. Mostraremos ser válido para $\bigcup_{i=1}^{n+1} S_i$.

@@ -15,7 +15,7 @@ Suppose that $f: A \rightarrow B$ and $g: B \rightarrow C$ are both one-to-one a
 ### Solução
 
 #### Primeira Parte
-Basta juntar os resultados das letras (a) dos exercícios [1.4.1](/posts/set-theory-and-metric-spaces/capitulo-1-exercicio-1.4.1/) e [1.4.2](/posts/set-theory-and-metric-spaces/capitulo-1-exercicio-1.4.2/).
+Basta juntar os resultados das letras (a) dos exercícios [1.4.1](../exercise-1.4.1) e [1.4.2](../exercise-1.4.2).
 
 #### Segunda Parte
 $$
