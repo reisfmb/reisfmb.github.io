@@ -1,0 +1,33 @@
+<!doctype html><html lang=pt-br><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content><title>(Irving Kaplansky - Set Theory And Metric Spaces) Capítulo 1, exercício 1.6.1 | Reisfmb blog</title><link rel=stylesheet href=/css/reset.css><link rel=stylesheet href=/css/font.css><link rel=stylesheet href=/css/smigle.css><link rel=stylesheet href=/css/custom.css><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon.ico><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><meta name=msapplication-TileColor content="#da532c"><meta name=theme-color content="#ffffff"><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css integrity=sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js integrity=sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}]})})</script></head><body><header><div id=brand><a class=icon-link href=https://reisfmb.github.io/><img class=icon src=/images/mendelbrot.svg></a><div class=text><a href=https://reisfmb.github.io/><h1>Reisfmb blog</h1></a><h3>Bruno Reis Ferreira Maia</h3></div></div><nav><a href=/><b>Home</b></a>
+|
+<a href=/about/><b>Sobre</b></a>
+|
+<a href=/posts/><b>Posts</b></a>
+|
+<a href=/categories/><b>Categorias</b></a>
+|
+<a href=/tags/><b>Tags</b></a></nav><hr></header><div id=content><main><article><h1>(Irving Kaplansky - Set Theory And Metric Spaces) Capítulo 1, exercício 1.6.1</h1><div class=post-meta><strong><span>Posted on</span>
+<time>07/04/2022</time>
+<span>in</span>
+<a href=/categories/irving-kaplansky-set-theory-and-metric-spaces>Irving Kaplansky - Set Theory And Metric Spaces</a></strong>
+<span>• 239 words</span>
+<span>• 2 minute read</span><div><span>Tags:</span>
+<a href=/tags/countable-sets>Countable sets</a></div></div><div><h3 id=pergunta>Pergunta</h3><p>Let $A$ be a countable set and suppose that there is a given function mapping $A$ onto a set $B$. Prove that $B$ is countable</p><h3 id=solução>Solução</h3><p>Como $A$ é contável, segue que existe bijeção $f: \mathbb{N} \rightarrow A$. Seja $g: A \rightarrow B$ a função sobrejetora do enunciado.</p><p>Se $g$ for também injetora, então não há muito trabalho a fazer dado que $fg$ é a bijeção dos naturais ao conjunto $B$.</p><p>Suponha então $g$ não injetora.</p><p>Pelo fato de $A$ ser contável, segue que $A = \lbrace a_1, a_2, \cdots \rbrace$.</p><p>Para $S \subset A$ defina:</p><p>$$
+I(S) = I(\lbrace a_{s1}, a_{s2}, \cdots \rbrace) = \lbrace s1, s2, \cdots \rbrace \subset \mathbb{N}
+$$</p><p>Com tal definição, defina a seguinte função $h: B \rightarrow \mathbb{N}$</p><p>$$
+h(b) = \min I(g^{-1}(\lbrace b \rbrace))
+$$</p><p>Perceba então que é <strong>suficiente mostrar que $h$ é injetiva</strong>, pois caso seja, $h$ será bijeção com subconjunto de $\mathbb{N}$ e como todo subconjunto de um conjunto contável é contável, $B$ será contável.</p><p>Sejam $b_1, b_2 \in B$ tal que $h(b_1) = h(b_2)$, o que implica que:</p><p>$$
+\min I(g^{-1}(\lbrace b_1 \rbrace)) = \min I(g^{-1}(\lbrace b_2 \rbrace))
+$$</p><p>Para que os mínimos sejam iguais, é necessário então que exista ao menos um elemento em comum nos conjuntos $g^{-1}(\lbrace b_1 \rbrace)$ e $g^{-1}(\lbrace b_2 \rbrace)$. Tal suposição implica a existência de $a \in A$ tal que $g(a) = b_1$ e $g(a) = b_2$, logo, $b_1 = b_2$.</p></div></article></main></div><footer><hr><p id=social>Find me around the web:<br><a href=https://github.com/reisfmb>GitHub</a>
+|
+<a href=mailto:breisfm@gmail.com>breisfm@gmail.com</a></p><p class=copyright>Copyright © 2022
+<a href=https://reisfmb.github.io/><strong>Bruno Reis</strong></a>.
+This work is licensed under the
+<a href=http://creativecommons.org/licenses/by-sa/4.0/>CC BY-SA 4.0</a> license.</p><p class=builtWith>Built with
+<a href=http://www.gohugo.io/>Hugo</a>,
+using the theme
+<a href=https://gitlab.com/ian-s-mcb/smigle-hugo-theme>smigle</a>,
+which was influenced by the theme
+<a href=https://github.com/sumnerevans/smol>smol</a>.</p></footer></body></html>
