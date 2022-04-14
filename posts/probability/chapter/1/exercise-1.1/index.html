@@ -1,0 +1,44 @@
+<!doctype html><html lang=pt-br><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content><title>(Probabilidade) Capítulo 1, exercício 1.1 | Reisfmb blog</title><link rel=stylesheet href=/css/reset.css><link rel=stylesheet href=/css/font.css><link rel=stylesheet href=/css/smigle.css><link rel=stylesheet href=/css/custom.css><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon.ico><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><meta name=msapplication-TileColor content="#da532c"><meta name=theme-color content="#ffffff"><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css integrity=sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js integrity=sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}]})})</script></head><body><header><div id=brand><a class=icon-link href=https://reisfmb.github.io/><img class=icon src=/images/mendelbrot.svg></a><div class=text><a href=https://reisfmb.github.io/><h1>Reisfmb blog</h1></a><h3>Bruno Reis Ferreira Maia</h3></div></div><nav><a href=/><b>Home</b></a>
+|
+<a href=/about/><b>Sobre</b></a>
+|
+<a href=/posts/><b>Posts</b></a>
+|
+<a href=/categories/><b>Categorias</b></a>
+|
+<a href=/tags/><b>Tags</b></a></nav><hr></header><div id=content><main><article><h1>(Probabilidade) Capítulo 1, exercício 1.1</h1><div class=post-meta><strong><span>Posted on</span>
+<time>13/04/2022</time>
+<span>in</span>
+<a href=/categories/probabilidade>Probabilidade</a></strong>
+<span>• 194 words</span>
+<span>• 1 minute read</span><div><span>Tags:</span>
+<a href=/tags/probability>Probability</a></div></div><div><h3 id=pergunta>Pergunta</h3><p>Considere o experimento resultante do lançamento de dois dados onde se observa o mínimo entre suas faces. Construa um modelo probabilístico associado.</p><h3 id=solução>Solução</h3><p>$$
+\Omega = \lbrace 1,2,3,4,5,6 \rbrace^2
+$$</p><p>Seja então $A_i$ tal que $i \in \lbrace 1,2,3,4,5,6 \rbrace$ os seguintes conjuntos</p><p>$$
+A_i =
+\lbrace (i,j) \mid i \leq j \text{ e } j \in \lbrace 1,2,3,4,5,6 \rbrace \rbrace
+\cup
+\lbrace (j,i) \mid i \leq j \text{ e } j \in \lbrace 1,2,3,4,5,6 \rbrace \rbrace
+$$</p><p>Perceba então que podemos interpretar cada $A_i \subset \Omega$ como sendo o conjunto de todos os possiveis lançamentos de dois dados onde o menor número entre as duas faces para cima é $i$.</p><p>Considere então uma $\sigma$-álgebra $\mathcal{F}$ de subconjuntos de $\Omega$ tal que $A_i \in \mathcal{F}$.</p><p>Logo, associamos a seguinte função $P: \mathcal{F} \rightarrow \mathbb{R}$ todo $A \in \mathcal{F}$:</p><p>$$
+P(A) = \frac{|A|}{|\Omega|} = \frac{|A|}{36}
+$$</p><p>Sendo assim, teriamos as seguintes probabilidades para os eventos $A_i$:
+$$
+P(A_1) = 11 / 36 \newline
+P(A_2) = 9 / 36 \newline
+P(A_3) = 7 / 36 \newline
+P(A_4) = 5 / 36 \newline
+P(A_5) = 3 / 36 \newline
+P(A_6) = 1 / 36 \newline
+$$</p></div></article></main></div><footer><hr><p id=social>Find me around the web:<br><a href=https://github.com/reisfmb>GitHub</a>
+|
+<a href=mailto:breisfm@gmail.com>breisfm@gmail.com</a></p><p class=copyright>Copyright © 2022
+<a href=https://reisfmb.github.io/><strong>Bruno Reis</strong></a>.
+This work is licensed under the
+<a href=http://creativecommons.org/licenses/by-sa/4.0/>CC BY-SA 4.0</a> license.</p><p class=builtWith>Built with
+<a href=http://www.gohugo.io/>Hugo</a>,
+using the theme
+<a href=https://gitlab.com/ian-s-mcb/smigle-hugo-theme>smigle</a>,
+which was influenced by the theme
+<a href=https://github.com/sumnerevans/smol>smol</a>.</p></footer></body></html>

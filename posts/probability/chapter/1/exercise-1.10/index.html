@@ -1,0 +1,40 @@
+<!doctype html><html lang=pt-br><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content><title>(Probabilidade) Capítulo 1, exercício 1.10 | Reisfmb blog</title><link rel=stylesheet href=/css/reset.css><link rel=stylesheet href=/css/font.css><link rel=stylesheet href=/css/smigle.css><link rel=stylesheet href=/css/custom.css><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon.ico><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><meta name=msapplication-TileColor content="#da532c"><meta name=theme-color content="#ffffff"><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css integrity=sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js integrity=sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}]})})</script></head><body><header><div id=brand><a class=icon-link href=https://reisfmb.github.io/><img class=icon src=/images/mendelbrot.svg></a><div class=text><a href=https://reisfmb.github.io/><h1>Reisfmb blog</h1></a><h3>Bruno Reis Ferreira Maia</h3></div></div><nav><a href=/><b>Home</b></a>
+|
+<a href=/about/><b>Sobre</b></a>
+|
+<a href=/posts/><b>Posts</b></a>
+|
+<a href=/categories/><b>Categorias</b></a>
+|
+<a href=/tags/><b>Tags</b></a></nav><hr></header><div id=content><main><article><h1>(Probabilidade) Capítulo 1, exercício 1.10</h1><div class=post-meta><strong><span>Posted on</span>
+<time>13/04/2022</time>
+<span>in</span>
+<a href=/categories/probabilidade>Probabilidade</a></strong>
+<span>• 449 words</span>
+<span>• 3 minute read</span><div><span>Tags:</span>
+<a href=/tags/probability>Probability</a>,
+<a href=/tags/stars-and-bars>Stars and bars</a></div></div><div><h3 id=pergunta>Pergunta</h3><p>No final da Seção 1.1.3, observamos que há 21 resultados possíveis no lançamento simultâneo de dois dados idênticos, correspondendo aos 21 pares não-ordenados de números entre 1 e 6. Um jogo de dominó para crianças, em que cada metade de peça pode ser pintada com uma de 7 cores do arco-íris, possui 28 peças, correspondendo aos 28 pares não-ordenados de cores do arco-íris. De forma mais geral, o número de pares não-ordenados de um conjunto com $n$ elementos é ${n+1 \choose 2}$. Prove este fato de quatro formas diferentes:</p><p>a) Por indução em n e usando propriedades do Triângulo de Pascal.</p><p>b) Decompondo a família de pares não-ordenados em pares de elementos distintos e pares de elementos iguais.</p><p>c) Descrevendo uma correspondência direta entre pares não-ordenados de {1, . . . , n} e subconjuntos de {*, 1, . . . , n} com dois elementos, de forma que o novo elemento * cumpra um papel especial.</p><p>d) Descrevendo uma correspondência direta entre pares não-ordenados de {1, . . . , n} e palavras compostas por n − 1 símbolos |” e 2 de seus símbolos “·”.</p><h3 id=solução>Solução</h3><p>Primeiro perceba que
+$$
+{n+1 \choose 2} = \frac{(n+1)!}{2!(n-1)!} = \frac{(n+1)n(n-1)!}{2(n-1)!} = \frac{n^2+n}{2}
+$$</p><h4 id=a>a</h4><p>Boring.</p><h4 id=b>b</h4><p>Seja $S$ um conjunto com $n$ elementos e vamos considerar todos os possíveis pares não ordenados.</p><p>Primeiramente perceba que existem $n$ pares não ordenados de elementos iguais.</p><p>Para calcular os demais, basta contar os elementos da parte superior à diagonal principal de $S^2$, que possuirá $\frac{n^2 - n}{2}$ elementos.</p><p>Assim sendo, tem-se:
+$$
+n + \frac{n^2 - n}{2} = \frac{n^2+n}{2} = {n+1 \choose 2}
+$$</p><h4 id=c>c</h4><p>Seja $PNO_n$ o conjunto de pares não ordenados de $\lbrace 1, \cdots, n \rbrace$.</p><p>Considere então as entradas de $PNO_n$ com elementos iguais e tome o seguinte mapeamento</p><p>$$
+\lbrace i \rbrace \mapsto \lbrace *, i \rbrace
+$$</p><p>Já para as anetradas de $PNO_n$ com elementos distintos, tome o seguinte mapeamento</p><p>$$
+\lbrace i, j \rbrace \mapsto \lbrace i, j \rbrace
+$$</p><p>Defina então $f:PNO_n \rightarrow \text{subconjuntos de $\lbrace *, 1, \cdots, n \rbrace$ com $2$ elementos}$ com os mapeamentos acima. Como evidentemente $f$ é bijeção, segue que:</p><p>$$
+|PNO_n| = |\text{subconjuntos de $\lbrace *, 1, \cdots, n \rbrace$ com $2$ elementos}| = {n+1 \choose 2}
+$$</p><h4 id=d>d</h4><p>É mais facil descrever um caso específico do que escrever uma demonstração formal de tal fato.</p><p>Com tal finalidade, considere $\lbrace 1,2,3 \rbrace$ e vamos considerar todos os pares não ordenados de tal conjunto:</p><ul><li>$\lbrace 1 \rbrace$</li><li>$\lbrace 1,2 \rbrace$</li><li>$\lbrace 1,3 \rbrace$</li><li>$\lbrace 2 \rbrace$</li><li>$\lbrace 2,3 \rbrace$</li><li>$\lbrace 3 \rbrace$</li></ul><p>Perceba que as palavas associadas utilizando os símbolos solicitados são respectivamente</p><ul><li>..||</li><li>.|.|</li><li>.||.</li><li>|..|</li><li>.|.|.</li><li>||..</li></ul></div></article></main></div><footer><hr><p id=social>Find me around the web:<br><a href=https://github.com/reisfmb>GitHub</a>
+|
+<a href=mailto:breisfm@gmail.com>breisfm@gmail.com</a></p><p class=copyright>Copyright © 2022
+<a href=https://reisfmb.github.io/><strong>Bruno Reis</strong></a>.
+This work is licensed under the
+<a href=http://creativecommons.org/licenses/by-sa/4.0/>CC BY-SA 4.0</a> license.</p><p class=builtWith>Built with
+<a href=http://www.gohugo.io/>Hugo</a>,
+using the theme
+<a href=https://gitlab.com/ian-s-mcb/smigle-hugo-theme>smigle</a>,
+which was influenced by the theme
+<a href=https://github.com/sumnerevans/smol>smol</a>.</p></footer></body></html>
