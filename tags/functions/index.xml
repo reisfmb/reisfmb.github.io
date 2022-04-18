@@ -22,7 +22,11 @@ a) $f(S_1 \cup S_2) = f(S_1) \cup f(S_2)$
 b) $f^{-1}(T_1 \cup T_2) = f^{-1}(T_1) \cup f^{-1}(T_2)$
 c) $f(S_1 \cap S_2) \subset f(S_1) \cap f(S_2)$
 d) $f^{-1}(T_1 \cap T_2) = f^{-1}(T_1) \cap f^{-1}(T_2)$
-In part (c) show that equality holds for all $S_1$ and $S_2$ if and only if $f$ is one-to-one.</description></item><item><title>(Irving Kaplansky - Set Theory And Metric Spaces) Capítulo 1, exercício 1.4.17</title><link>https://reisfmb.github.io/posts/set-theory-and-metric-spaces/chapter/1/section/4/exercise-1.4.17/</link><pubDate>Tue, 05 Apr 2022 00:00:00 +0000</pubDate><guid>https://reisfmb.github.io/posts/set-theory-and-metric-spaces/chapter/1/section/4/exercise-1.4.17/</guid><description>Pergunta Let $f$ be a map of the set $A$ to itself.
+In part (c) show that equality holds for all $S_1$ and $S_2$ if and only if $f$ is one-to-one.</description></item><item><title>(Irving Kaplansky - Set Theory And Metric Spaces) Capítulo 1, exercício 1.4.12</title><link>https://reisfmb.github.io/posts/set-theory-and-metric-spaces/chapter/1/section/4/exercise-1.4.12/</link><pubDate>Tue, 05 Apr 2022 00:00:00 +0000</pubDate><guid>https://reisfmb.github.io/posts/set-theory-and-metric-spaces/chapter/1/section/4/exercise-1.4.12/</guid><description>Pergunta Let $f: A \rightarrow B$ be a given function. Complements are taken within $A$ for subsets of $A$, and within $B$ for subsets of $B$.
+a)
+b)
+c) Prove that $f(S&amp;rsquo;) \subset f(S)&amp;rsquo;$ for any $S \subset A$ if and only if $f$ is one-to-one
+Solução a b c Primeiramente perceba que $f(S&amp;rsquo;) \subset f(S)&amp;rsquo;$ implica que $f(S&amp;rsquo;) \cap f(S) = \emptyset$ pois caso o contrário existiria $b \in f(S&amp;rsquo;) \cap f(S)$ logo $b \in f(S&amp;rsquo;)$ mas $b \notin f(S)&amp;rsquo;$, absurdo.</description></item><item><title>(Irving Kaplansky - Set Theory And Metric Spaces) Capítulo 1, exercício 1.4.17</title><link>https://reisfmb.github.io/posts/set-theory-and-metric-spaces/chapter/1/section/4/exercise-1.4.17/</link><pubDate>Tue, 05 Apr 2022 00:00:00 +0000</pubDate><guid>https://reisfmb.github.io/posts/set-theory-and-metric-spaces/chapter/1/section/4/exercise-1.4.17/</guid><description>Pergunta Let $f$ be a map of the set $A$ to itself.
 a) If $B$ and $C$ are subsets with $f(B) = B$ and $f(C) = C$, prove that $f(B \cup C) = B \cup C$.
 b) Extend part a to any number of subsets.
 c) Prove that there is a unique largest subset of $A$ which is carried onto itself by $f$.

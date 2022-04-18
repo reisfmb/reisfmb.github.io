@@ -1,0 +1,38 @@
+<!doctype html><html lang=pt-br><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content><title>(Irving Kaplansky - Set Theory And Metric Spaces) Capítulo 2, exercício 2.1.19 | Reisfmb blog</title><link rel=stylesheet href=/css/reset.css><link rel=stylesheet href=/css/font.css><link rel=stylesheet href=/css/smigle.css><link rel=stylesheet href=/css/custom.css><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon.ico><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><meta name=msapplication-TileColor content="#da532c"><meta name=theme-color content="#ffffff"><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css integrity=sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js integrity=sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}]})})</script></head><body><header><div id=brand><a class=icon-link href=https://reisfmb.github.io/><img class=icon src=/images/mendelbrot.svg></a><div class=text><a href=https://reisfmb.github.io/><h1>Reisfmb blog</h1></a><h3>Bruno Reis Ferreira Maia</h3></div></div><nav><a href=/><b>Home</b></a>
+|
+<a href=/about/><b>Sobre</b></a>
+|
+<a href=/posts/><b>Posts</b></a>
+|
+<a href=/categories/><b>Categorias</b></a>
+|
+<a href=/tags/><b>Tags</b></a></nav><hr></header><div id=content><main><article><h1>(Irving Kaplansky - Set Theory And Metric Spaces) Capítulo 2, exercício 2.1.19</h1><div class=post-meta><strong><span>Posted on</span>
+<time>17/04/2022</time>
+<span>in</span>
+<a href=/categories/irving-kaplansky-set-theory-and-metric-spaces>Irving Kaplansky - Set Theory And Metric Spaces</a></strong>
+<span>• 350 words</span>
+<span>• 2 minute read</span><div><span>Tags:</span>
+<a href=/tags/metric-spaces>Metric Spaces</a></div></div><div><h3 id=pergunta>Pergunta</h3><p>Let $M$ be a set with a distance function $D$ satisfying the postulates for a metric space, expect the axiom II (p. 68) is weakened to $D(a,b) \geq 0$ for all $a,b$. Define $a \sim b$ to mean $D(a,b) = 0$. Prove that $\sim$ is an equivalence relation. Make the set of equivalence classes into a metric space in a natural way.</p><h3 id=solução>Solução</h3><p>Para que $\sim$ seja uma relação de equivalência deve satisfazer:</p><ul><li>$a \sim a$ para todo $a \in M$.</li><li>$a \sim b$ s.s.e $b \sim a$.</li><li>$a \sim b$ e $b \sim c$ implica que $a \sim c$.</li></ul><p>$D(a,a) = 0$ para todo $a \in M$, ja que $D$ é &ldquo;quase&rdquo; uma métrica, não atendendo somente o axioma II, logo $a \sim a$.</p><p>$a \sim b$ implica que $D(a,b) = 0$, mas $D(a,b) = D(b,a)$ pelo axioma III, logo $b \sim a$.</p><p>$D(a,c) \leq D(a,b) + D(b,c)$. Se $a \sim b$ e $b \sim c$ então $D(a,c) \leq 0$. Como $\underbrace{D(a,c) \geq 0}_{\text{weakened axiom II}}$ para todo $a,c \in M$, segue que $D(a,c) = 0$, portanto $a \sim c$.</p><p>Seja então</p><p>$$
+X = \bigg\lbrace C_m \mid m \in M \text{ e } C_m = \lbrace a \mid D(a,m) = 0 \rbrace \bigg\rbrace
+$$</p><p>X é o conjunto das classes de equivalência da relação definida no enunciado. Mostraremos que a seguinte função</p><p>$$
+\begin{align*}
+F:X^2 &\rightarrow \mathbb{R} \newline
+F(C_a, C_b) &=
+\begin{cases}
+0 && \text{se $a \sim b$} \newline
+1 && \text{se $a \nsim b$} \newline
+\end{cases}
+\end{align*}
+$$</p><p>é uma métrica em $X$ que o torna um espaço métrico.</p><ul><li>$F(C_a,C_a) = 0$ pois $a \sim a$</li><li>$F(C_a,C_b) = 1 > 0$ pois se $C_a \neq C_b$ então $a \nsim b$.</li><li>$F(C_a,C_b) = F(C_b,C_a)$ pois se $a \sim b \implies a \sim b$ e $b \nsim a \implies a \nsim b$.</li><li>$F(C_a,C_c) \leq F(C_a,C_b) + F(C_b,C_c)$ pois se $a \sim c$ então $0 \leq$ a soma de duas imagens de $F$ que são sempre não negativas. Se $a \nsim c$ então $a \nsim b$ ou $b \nsim c$, logo tem-se $1 \leq 1$ ou $1 \leq 2$.</li></ul></div></article></main></div><footer><hr><p id=social>Find me around the web:<br><a href=https://github.com/reisfmb>GitHub</a>
+|
+<a href=mailto:breisfm@gmail.com>breisfm@gmail.com</a></p><p class=copyright>Copyright © 2022
+<a href=https://reisfmb.github.io/><strong>Bruno Reis</strong></a>.
+This work is licensed under the
+<a href=http://creativecommons.org/licenses/by-sa/4.0/>CC BY-SA 4.0</a> license.</p><p class=builtWith>Built with
+<a href=http://www.gohugo.io/>Hugo</a>,
+using the theme
+<a href=https://gitlab.com/ian-s-mcb/smigle-hugo-theme>smigle</a>,
+which was influenced by the theme
+<a href=https://github.com/sumnerevans/smol>smol</a>.</p></footer></body></html>
