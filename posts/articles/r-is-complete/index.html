@@ -1,0 +1,40 @@
+<!doctype html><html lang=pt-br><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content><title>R is complete | Reisfmb blog</title><link rel=stylesheet href=/css/reset.css><link rel=stylesheet href=/css/font.css><link rel=stylesheet href=/css/smigle.css><link rel=stylesheet href=/css/custom.css><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon.ico><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><meta name=msapplication-TileColor content="#da532c"><meta name=theme-color content="#ffffff"><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css integrity=sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js integrity=sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}]})})</script></head><body><header><div id=brand><a class=icon-link href=https://reisfmb.github.io/><img class=icon src=/images/mendelbrot.svg></a><div class=text><a href=https://reisfmb.github.io/><h1>Reisfmb blog</h1></a><h3>Bruno Reis Ferreira Maia</h3></div></div><nav><a href=/><b>Home</b></a>
+|
+<a href=/about/><b>Sobre</b></a>
+|
+<a href=/posts/><b>Posts</b></a>
+|
+<a href=/categories/><b>Categorias</b></a>
+|
+<a href=/tags/><b>Tags</b></a></nav><hr></header><div id=content><main><article><h1>R is complete</h1><div class=post-meta><strong><span>Posted on</span>
+<time>08/05/2022</time>
+<span>in</span>
+<a href=/categories/articles>Articles</a></strong>
+<span>• 635 words</span>
+<span>• 3 minute read</span><div><span>Tags:</span>
+<a href=/tags/metric-spaces>Metric Spaces</a></div></div><div><h3 id=lema-1>Lema 1</h3><p>Seja $M$ um espaço métrico e $\lbrace x_n \rbrace \subset M$ uma sequência de Cauchy. Se existe uma subsequência dessa sequência tal que a subsequência converge para $x \in M$ então $\lbrace x_n \rbrace \rightarrow x$.</p><p>Seja $\lbrace x_{n_k} \rbrace$ uma subsequência de $\lbrace x_n \rbrace$ tal que $\lbrace x_{n_k} \rbrace \rightarrow x$. Mostraremos que $\lbrace x_n \rbrace \rightarrow x$.</p><p>Seja $\epsilon_1 > 0$. Pela convergência da subsequência, existe $N_1$ tal que para todo $k > N_1$ tem-se $D(x_{n_k},x) &lt; \epsilon_1$.</p><p>Perceba então que
+$$
+D(x_n,x) \leq D(x_n,x_{n_k}) + D(x_{n_k},x) &lt; D(x_n,x_{n_k}) &lt; \epsilon_1
+$$</p><p>Porém $\lbrace x_n \rbrace$ é de Cauchy, logo para $\epsilon_2 > 0$ existe $N_2$ tal que para todo $n,m > N_2$ tem-se $D(x_n,x_m) &lt; \epsilon_2$.</p><p>Tome então $\epsilon > 0$, $\epsilon_1 = \frac{\epsilon}{2}$, $\epsilon_2 = \frac{\epsilon}{2}$ e $N = \max(N_1,N_2)$. Segue então que para $n,n_k > N$ tem-se
+$$
+D(x_n,x) \leq D(x_n,x_{n_k}) + D(x_{n_k},x) &lt; \frac{\epsilon}{2} + \frac{\epsilon}{2} &lt; \epsilon
+$$</p><p>Logo $\lbrace x_n \rbrace \rightarrow x$. $\blacksquare$</p><h3 id=lema-2>Lema 2</h3><p>Seja $\lbrace x_n \rbrace$ uma seuqência de Cauchy em $\mathbb{R}$. Segue então que $\lbrace x_n \rbrace$ é limitada.</p><p>Fixe $r_1 > 0$. Como a sequência é de Cauchy, então existe $N_1$ tal que $\forall n,m > N_1$ tem-se $D(x_n,x_m) &lt; r_1$.</p><p>Mostraremos que existe $R \in \mathbb{R}$ tal que $D(x_i,x_{N_1}) &lt; R$ para todo $i \in \mathbb{Z}^+$, ou seja, $\lbrace x_n \rbrace \subset B_R(x_{N_1})$.</p><p>Defina:</p><p>$$
+r_2 = \max \lbrace D(x_i,x_{N_1})\rbrace_{i \leq N_1}
+$$</p><p>Perceba que $r_2$ existe pois existem finitos termos da sequência com índices menores que $N_1$.</p><p>Perceba agora que:</p><ul><li>$\forall i \leq N_1$ temos $D(x_i,x_{N_1}) \leq r_2$.</li><li>$\forall i > N_1$ temos que $D(x_i,x_{N_1}) \leq D(x_i, x_{N_1+1}) + D(x_{N_1+1},x_{N_1}) \leq r_1 + D(x_{N_1+1},x_{N_1})$</li></ul><p>Logo $\forall i \in \mathbb{Z}^+$ segue que</p><p>$$
+D(x_i,x_{N_1}) &lt; \underbrace{r2 + r_1 + D(x_{N_1+1},x_{N_1})}_{R}
+$$</p><p>Portanto $\lbrace x_n \rbrace \subset B_R(x_{N_1})$ onde $R = r_1 + r_2 + D(x_{N_1+1},x_{N_1})$. $\blacksquare$</p><h3 id=lema-3>Lema 3</h3><p>Seja $\lbrace x_n \rbrace$ uma sequência monótona e limitada em $\mathbb{R}$. Então $\lbrace x_n \rbrace$ é convergente.</p><p>Suponha sem perder generalidade que $\lbrace x_n \rbrace$ seja monótona crescente. Mostraremos que $\lbrace x_n \rbrace$ converge para $S = \sup \lbrace x_n \rbrace$.</p><p>Primeiramente perceba que $S$ existe pois $\lbrace x_n \rbrace$ é limitado superiormente.</p><p>Seja então $\epsilon > 0$. Afirmo que existe $N$ tal que $x_N > S - \epsilon$, pois caso contrário, $\lbrace x_n \rbrace &lt; S - \epsilon$, e $S - \epsilon &lt; S$, o que contraria o fato que $S$ é o supremo.</p><p>Sendo assim, para $n > N$ tem-se:
+$$
+S - \epsilon &lt; x_N \leq x_n \leq S &lt; S + \epsilon \implies |x_n - S| &lt; \epsilon
+$$</p><p>onde, da esquerda para a direita, a segunda desiguldade vem do fato que a sequência é monótona crescente e a terceira vem do fato que $S$ é supremo para a sequência.</p><p>Ou seja, para arbitrário $\epsilon > 0$, conseguimos mostrar que existe $N$ tal que $n > N$ implica que $|x_N - S| &lt; \epsilon$, logo $\lbrace x_n \rbrace \rightarrow \sup\lbrace x_n \rbrace $. $\blacksquare$</p><h3 id=lema-4>Lema 4</h3><p>Se $\lbrace x_n \rbrace$ é uma sequência em $\mathbb{R}$ então existe $\lbrace x_{n_k} \rbrace$ subsequência monótona.</p><p><a href=https://math.stackexchange.com/questions/716461/proof-verification-every-sequence-in-bbb-r-contains-a-monotone-sub-sequence>ESCREVER A PROVA</a></p><p>$\blacksquare$</p><hr><h3 id=definição-de-espaço-completo>Definição de espaço completo</h3><p>Um espaço métrico $M$ é dito completo se toda sequência de Cauchy em $M$ for convergente.</p><h3 id=mathbbr-é-completo>$\mathbb{R}$ é completo</h3><p>Seja $\lbrace x_n \rbrace$ uma sequência de Cauchy nos reais.</p><ul><li>Pelo lema 4, segue que existe uma subsequência $\lbrace x_{n_k} \rbrace$ de $\lbrace x_n \rbrace$ que é monótona;</li><li>Pelo lema 2, $\lbrace x_n \rbrace$ é limitada e portanto $\lbrace x_{n_k} \rbrace$ também é;</li><li>Pelo lema 3, segue que $\lbrace x_{n_k} \rbrace$ é convergente, pois pelo que foi contestado anteriormente garante que $\lbrace x_{n_k} \rbrace$ é monótona e limitada;</li><li>Pelo lema 1, segue que $\lbrace x_n \rbrace$ é convergente.</li></ul><p>Logo $\lbrace x_n \rbrace$ converge nos reais. $\blacksquare$</p></div></article></main></div><footer><hr><p id=social>Find me around the web:<br><a href=https://github.com/reisfmb>GitHub</a>
+|
+<a href=mailto:breisfm@gmail.com>breisfm@gmail.com</a></p><p class=copyright>Copyright © 2022
+<a href=https://reisfmb.github.io/><strong>Bruno Reis</strong></a>.
+This work is licensed under the
+<a href=http://creativecommons.org/licenses/by-sa/4.0/>CC BY-SA 4.0</a> license.</p><p class=builtWith>Built with
+<a href=http://www.gohugo.io/>Hugo</a>,
+using the theme
+<a href=https://gitlab.com/ian-s-mcb/smigle-hugo-theme>smigle</a>,
+which was influenced by the theme
+<a href=https://github.com/sumnerevans/smol>smol</a>.</p></footer></body></html>

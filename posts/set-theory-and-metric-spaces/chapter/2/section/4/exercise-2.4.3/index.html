@@ -1,0 +1,42 @@
+<!doctype html><html lang=pt-br><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content><title>(Irving Kaplansky - Set Theory And Metric Spaces) Capítulo 2, exercício 2.4.3 | Reisfmb blog</title><link rel=stylesheet href=/css/reset.css><link rel=stylesheet href=/css/font.css><link rel=stylesheet href=/css/smigle.css><link rel=stylesheet href=/css/custom.css><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon.ico><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><meta name=msapplication-TileColor content="#da532c"><meta name=theme-color content="#ffffff"><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css integrity=sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js integrity=sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}]})})</script></head><body><header><div id=brand><a class=icon-link href=https://reisfmb.github.io/><img class=icon src=/images/mendelbrot.svg></a><div class=text><a href=https://reisfmb.github.io/><h1>Reisfmb blog</h1></a><h3>Bruno Reis Ferreira Maia</h3></div></div><nav><a href=/><b>Home</b></a>
+|
+<a href=/about/><b>Sobre</b></a>
+|
+<a href=/posts/><b>Posts</b></a>
+|
+<a href=/categories/><b>Categorias</b></a>
+|
+<a href=/tags/><b>Tags</b></a></nav><hr></header><div id=content><main><article><h1>(Irving Kaplansky - Set Theory And Metric Spaces) Capítulo 2, exercício 2.4.3</h1><div class=post-meta><strong><span>Posted on</span>
+<time>30/04/2022</time>
+<span>in</span>
+<a href=/categories/irving-kaplansky-set-theory-and-metric-spaces>Irving Kaplansky - Set Theory And Metric Spaces</a></strong>
+<span>• 177 words</span>
+<span>• 1 minute read</span><div><span>Tags:</span>
+<a href=/tags/metric-spaces>Metric Spaces</a></div></div><div><h3 id=pergunta>Pergunta</h3><p>Let $A$ be a fixed subset of a metric space $M$. The function $f(x) = D(A,x)$ maps $M$ into the real numbers - see <a href=../3/exercise-2.3.10>Exercise 4.3.10</a>. Prove that $f$ is continuous.</p><h3 id=solução>Solução</h3><p>Seja $x_0 \in M$ e $\epsilon$ um numero real positivo. Mostraremos que existe $\delta$ real positivo tal que $D(x,x_0) &lt; \delta \implies D(f(x),f(x_0)) &lt; \epsilon$.</p><p>$$
+D(f(x),f(x_0)) = |D(A,x) - D(A,x_0)|
+$$</p><p>onde $D(A,x) = \inf \lbrace D(a,x) \mid a \in A \rbrace$.</p><p>Da desigualdade triangular segue que para $z \in M$, tem-se:</p><p>$$
+D(a,x) \leq D(a,z) + D(z,x)
+$$</p><p>Como $D(A,x) \leq D(a,x)$ para todo $a \in A$, segue:</p><p>$$
+D(A,x) \leq D(a,z) + D(z,x) \implies D(A,x) - D(z,x) \leq D(a,z)
+$$</p><p>Mas como $D(A,z)$ é o ínfimo, então</p><p>$$
+D(A,x) - D(z,x) \leq D(A,z) \implies D(A,x) - D(A,z) \leq D(z,x)
+$$</p><p>Tomando $z = x_0$ temos que</p><p>$$
+D(A,x) - D(A,x_0) \leq D(x_0,x)
+$$</p><p>E trocando $x$ por $x_0$:</p><p>$$
+D(A,x_0) - D(A,x) \leq D(x,x_0)
+$$</p><p>Logo
+$$
+|D(A,x) - D(A,x_0)| \leq D(x,x_0) &lt; \delta
+$$</p><p>Portanto basta tomar $\delta = \epsilon$.</p></div></article></main></div><footer><hr><p id=social>Find me around the web:<br><a href=https://github.com/reisfmb>GitHub</a>
+|
+<a href=mailto:breisfm@gmail.com>breisfm@gmail.com</a></p><p class=copyright>Copyright © 2022
+<a href=https://reisfmb.github.io/><strong>Bruno Reis</strong></a>.
+This work is licensed under the
+<a href=http://creativecommons.org/licenses/by-sa/4.0/>CC BY-SA 4.0</a> license.</p><p class=builtWith>Built with
+<a href=http://www.gohugo.io/>Hugo</a>,
+using the theme
+<a href=https://gitlab.com/ian-s-mcb/smigle-hugo-theme>smigle</a>,
+which was influenced by the theme
+<a href=https://github.com/sumnerevans/smol>smol</a>.</p></footer></body></html>

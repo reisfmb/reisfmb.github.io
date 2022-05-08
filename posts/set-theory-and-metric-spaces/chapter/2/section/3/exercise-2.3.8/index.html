@@ -1,0 +1,41 @@
+<!doctype html><html lang=pt-br><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content><title>(Irving Kaplansky - Set Theory And Metric Spaces) Capítulo 2, exercício 2.3.8 | Reisfmb blog</title><link rel=stylesheet href=/css/reset.css><link rel=stylesheet href=/css/font.css><link rel=stylesheet href=/css/smigle.css><link rel=stylesheet href=/css/custom.css><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon.ico><link rel=manifest href=/site.webmanifest><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><meta name=msapplication-TileColor content="#da532c"><meta name=theme-color content="#ffffff"><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.css integrity=sha384-KiWOvVjnN8qwAZbuQyWDIbfCLFhLXNETzBQjA/92pIowpC0d2O3nppDGQVgwd2nB crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.min.js integrity=sha384-0fdwu/T/EQMsQlrHCCHoH10pkPLlKA1jL5dFyUOvB3lfeT2540/2g6YgSi2BL14p crossorigin=anonymous></script>
+<script defer src=https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js integrity=sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR crossorigin=anonymous></script>
+<script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}]})})</script></head><body><header><div id=brand><a class=icon-link href=https://reisfmb.github.io/><img class=icon src=/images/mendelbrot.svg></a><div class=text><a href=https://reisfmb.github.io/><h1>Reisfmb blog</h1></a><h3>Bruno Reis Ferreira Maia</h3></div></div><nav><a href=/><b>Home</b></a>
+|
+<a href=/about/><b>Sobre</b></a>
+|
+<a href=/posts/><b>Posts</b></a>
+|
+<a href=/categories/><b>Categorias</b></a>
+|
+<a href=/tags/><b>Tags</b></a></nav><hr></header><div id=content><main><article><h1>(Irving Kaplansky - Set Theory And Metric Spaces) Capítulo 2, exercício 2.3.8</h1><div class=post-meta><strong><span>Posted on</span>
+<time>28/04/2022</time>
+<span>in</span>
+<a href=/categories/irving-kaplansky-set-theory-and-metric-spaces>Irving Kaplansky - Set Theory And Metric Spaces</a></strong>
+<span>• 264 words</span>
+<span>• 2 minute read</span><div><span>Tags:</span>
+<a href=/tags/metric-spaces>Metric Spaces</a>,
+<a href=/tags/limit-point>Limit point</a></div></div><div><h3 id=pergunta>Pergunta</h3><p>Pove: The diameter of a set $A$ in a metric space is the same as the diameter of its closure.</p><h3 id=solução>Solução</h3><p>Seja $A \subset M$. Como $A \in \overline{A}$ segue que $\text{diam}(A) \leq \text{diam}(\overline{A})$.</p><p>Mostraremos então que $\text{diam}(\overline{A}) \leq \text{diam}(A)$.</p><p>Sejam $x,y \in \overline{A}$.</p><p>Se $x,y \in A$ então $d(x,y) &lt; \text{diam}(A)$.</p><p>Se $x \in A$ e $y \notin A$ então $y$ é ponto limite de $A$ pois $y \in \overline{A \setminus \lbrace y \rbrace}$, logo para todo $r > 0$ segue que $B_r(y) \cap A \neq \emptyset$, ou seja, para todo $r > 0$ existe $z \in B_r(y) \cap A$ tal que $d(y,z) &lt; r$, logo</p><p>$$
+D(x,y) \leq D(x,z) + D(z,y) &lt; \text{diam}(A) + r = \text{diam}(A) + \epsilon
+$$</p><p>Suponha então que $x$ e $y$ não estejam em $A$, logo $x$ e $y$ são pontos limites, e pelo mesmo argumento anterior segue que para qualquer $r_1,r_2 > 0$ existem $z,w \in A$ tais que $D(x,z) &lt; r_1$ e $D(y,w) &lt; r_2$, logo</p><p>$$
+D(x,y) \leq D(x,z) + D(z,w) + D(w,y) &lt; r_1 + \text{diam}(A) + r_2 = \text{diam}(A) + \epsilon
+$$</p><p>Ou seja, para qualquer $x,y \in \overline{A}$ concluimos que para $\epsilon$ arbitrário tem-se $\text{diam}(\overline{A}) &lt; \text{diam}(A) + \epsilon$, o que implica que $\text{diam}(\overline{A}) \leq \text{diam}(A)$ pois caso contrário então teriamos $\text{diam}(\overline{A}) > \text{diam}(A)$, o que é aburdo pois basta tomar $\epsilon = \frac{\text{diam}(\overline{A}) - \text{diam}(A)}{2}$ que teriamos:</p><p>$$
+\begin{align*}
+\text{diam}(\overline{A}) &&lt; \text{diam}(A) + \epsilon \newline
+&&lt; \text{diam}(A) + \frac{\text{diam}(\overline{A}) - \text{diam}(A)}{2} \newline
+&&lt; \frac{\text{diam}(A) + \text{diam}(\overline{A})}{2} \newline
+\text{diam}(\overline{A}) &&lt; \text{diam}(A) \newline
+\end{align*}
+$$</p><p>logo</p><p>$$
+\text{diam}(A) = \text{diam}(\overline{A})
+$$</p></div></article></main></div><footer><hr><p id=social>Find me around the web:<br><a href=https://github.com/reisfmb>GitHub</a>
+|
+<a href=mailto:breisfm@gmail.com>breisfm@gmail.com</a></p><p class=copyright>Copyright © 2022
+<a href=https://reisfmb.github.io/><strong>Bruno Reis</strong></a>.
+This work is licensed under the
+<a href=http://creativecommons.org/licenses/by-sa/4.0/>CC BY-SA 4.0</a> license.</p><p class=builtWith>Built with
+<a href=http://www.gohugo.io/>Hugo</a>,
+using the theme
+<a href=https://gitlab.com/ian-s-mcb/smigle-hugo-theme>smigle</a>,
+which was influenced by the theme
+<a href=https://github.com/sumnerevans/smol>smol</a>.</p></footer></body></html>
