@@ -54,7 +54,7 @@ Perceba agora que:
 Logo $\forall i \in \mathbb{Z}^+$ segue que
 
 $$
-D(x_i,x_{N_1}) < \underbrace{r2 + r_1 + D(x_{N_1+1},x_{N_1})}_{R}
+D(x_i,x_{N_1}) < \underbrace{r_2 + r_1 + D(x_{N_1+1},x_{N_1})}_{R}
 $$
 
 Portanto $\lbrace x_n \rbrace \subset B_R(x_{N_1})$ onde $R = r_1 + r_2 + D(x_{N_1+1},x_{N_1})$. $\blacksquare$
